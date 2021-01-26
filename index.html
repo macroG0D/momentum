@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/owfont-regular.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="./assets/favicon.png">
+  <title>Momentum</title>
+</head>
+
+<body>
+
+  <div class="arrows-wrapper">
+    <button class="arrows arrows__prev" data="prev"> prev </button>
+    <button class="arrows arrows__next" data="next"> next </button>
+  </div>
+
+  <div class="widget main-widget dark-widget">
+    <div class="calendar">
+      <div class="calendar__date">
+        Friday, 25 october
+      </div>
+      <div class="calendar__time">
+        --:--:--
+      </div>
+    </div>
+
+    <div class="greeting">
+      <div class="greeting__text">
+        Hello,&nbsp;
+      </div>
+      <div class="greeting__name input" data="name" spellcheck="false" contenteditable="true">
+      </div>
+    </div>
+    <div class="whatFocus">
+      Your focus today
+      <div class="focus input" data="focus" spellcheck="false" contenteditable="true"></div>
+    </div>
+  </div>
+
+  <div class="widget weather dark-widget">
+    <div class="whatCity">
+      <!-- City -->
+      <div class="city input" data="city" spellcheck="false" contenteditable="true"></div>
+      <div class="weather__info">
+        <div class="weather__item-wrapper">
+          <div class="weather__icon owf"></div>
+          <span class="describer">Weather</span>
+        </div>
+        <div class="weather__item-wrapper">
+          <div class="weather__temperature">
+          </div>
+          <span class="describer">Temperature</span>
+        </div>
+        <div class="weather__item-wrapper">
+          <div class="weather__humidity"></div>
+          <span class="describer">Humidity</span>
+        </div>
+        <div class="weather__item-wrapper">
+          <div class="weather__wind">
+          </div>
+          <span class="describer">Wind</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <figure class="widget quote-widget dark-widget">
+    <blockquote class="quote-text"></blockquote>
+    <figcaption class="quote-author"></figcaption>
+    <button class="refresh" onclick="quotes()"><i class="fa fa-refresh fa-spin"></i></button>
+  </figure>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
